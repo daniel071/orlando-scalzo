@@ -4,3 +4,5 @@
 ## Credits:
 Background instrumental: Soreperior 
 All sprites, etc: Toby Fox
+Link to video can be found here:
+https://youtu.be/sT3N-pD_hGU
