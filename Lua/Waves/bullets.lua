@@ -11,7 +11,11 @@ function Update()
     if spawntimery%15 == 0 then
         local posx = math.random(-60, 60)
         local posy = Arena.height/2
-		local bulletType = colors[math.random(#colors)]
+		if (GetRealGlobal("scalzo-impressions") > 2) then
+			local bulletType = colors[math.random(#colors)]
+		else
+			local bulletType = colors[1]
+		end
         local bullet = CreateProjectile('bullet', posx, posy)
 		if bulletType == "green" then
             bullet.sprite.color = {64/255, 252/255, 64/255}
@@ -24,7 +28,11 @@ function Update()
 	if spawntimerx%15 == 0 then
 		local posy = math.random(-60, 60)
         local posx = Arena.width/2
-        local bulletType = colors[math.random(#colors)]
+		if (GetRealGlobal("scalzo-impressions") > 2) then
+			local bulletType = colors[math.random(#colors)]
+		else
+			local bulletType = colors[1]
+		end
 		local bullet = CreateProjectile('bullet', posx, posy)
 		if bulletType == "green" then
             bullet.sprite.color = {64/255, 252/255, 64/255}
