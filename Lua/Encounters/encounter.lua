@@ -1,6 +1,6 @@
 -- An animation demo with a rotating Sans head.
 
-music = "mus_zz_megalovania" --Always OGG. Extension is added automatically. Remove the first two lines for custom music.
+music = "stronger_than_you_8bit" --Always OGG. Extension is added automatically. Remove the first two lines for custom music.
 encountertext = "Scalzo comfronts you about your poor peformance at drama" --Modify as necessary. It will only be read out in the action select screen.
 nextwaves = {"bullets"}
 wavetimer = 10.0
