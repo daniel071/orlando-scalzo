@@ -15,6 +15,7 @@ function Update()
 			local bulletType = colors[math.random(#colors)]
 		else
 			local bulletType = colors[1]
+			DEBUG(colors[1])
 		end
         local bullet = CreateProjectile('bullet', posx, posy)
 		if bulletType == "green" then

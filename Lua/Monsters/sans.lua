@@ -35,7 +35,12 @@ function HandleCustomCommand(command)
 
     end
 	
-	SetRealGlobal("scalzo-impressions", (GetRealGlobal("scalzo-impressions") + 1))
+	if currentdialogue == {"Selected\nAct 1."} or currentdialogue == {"Selected\nAct 3."} then
+		SetRealGlobal("scalzo-impressions", (GetRealGlobal("scalzo-impressions") + 1))
+	elseif currentdialogue == {"Selected\nAct 2."}
+		SetRealGlobal("scalzo-impressions", (GetRealGlobal("scalzo-impressions") - 1))
+	end
+	
 	if GetRealGlobal("scalzo-can-spare") == true then
 		canspare = true
 	end

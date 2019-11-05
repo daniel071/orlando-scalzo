@@ -24,6 +24,8 @@ function EncounterStarting()
 	Player.name = "CHARA"
 	SetRealGlobal("scalzo-impressions", 0)
 	SetRealGlobal("scalzo-can-spare", false)
+	Inventory.AddCustomItems({"Pie", "I. Noodles"}, {0, 0})
+	Inventory.SetInventory({"Pie", "I. Noodles"})
 	
     --Include the animation Lua file. It's important you do this in EncounterStarting, because you can't create sprites before the game's done loading.
     --Be careful that you use different variable names as you have here, because the encounter's will be overwritten otherwise!
@@ -41,6 +43,7 @@ function EnemyDialogueEnding()
     -- This example line below takes a random attack from 'possible_attacks'.
 	nextwaves = { possible_attacks[math.random(#possible_attacks)] }
 	wavetimer = math.random(7.0, 12.0)
+	DEBUG(GetRealGlobal("scalzo-impressions"))
 end
 
 function DefenseEnding() --This built-in function fires after the defense round ends.
@@ -55,5 +58,13 @@ function HandleSpare()
 end
 
 function HandleItem(ItemID)
-    BattleDialog({"Selected item " .. ItemID .. "."})
+	if ItemID == "I. NOODLES" then
+		Player.Heal(90)
+		BattleDialog({"You ate the Instant Noodles \nNot so instant..."})
+	elseif ItemID == "Pie" then
+		Player.Heal(99)
+		BattleDialog({"You ate the Pie \nYum"})
+	end
+	
+	
 end
