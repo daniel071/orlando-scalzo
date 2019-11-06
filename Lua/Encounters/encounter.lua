@@ -1,6 +1,6 @@
 -- An animation demo with a rotating Sans head.
 
-music = "stronger_than_you_8bit" --Always OGG. Extension is added automatically. Remove the first two lines for custom music.
+music = "Song-That-Might-Play-When-You-Fight-Scalzo" --Always OGG. Extension is added automatically. Remove the first two lines for custom music.
 encountertext = "Scalzo comfronts you about your poor peformance at drama" --Modify as necessary. It will only be read out in the action select screen.
 nextwaves = {"bullets"}
 wavetimer = 10.0
@@ -24,7 +24,12 @@ function EncounterStarting()
 	Player.name = "CHARA"
 	SetRealGlobal("scalzo-impressions", 0)
 	SetRealGlobal("scalzo-can-spare", false)
+	
 	Inventory.AddCustomItems({"Pie", "I. Noodles"}, {0, 0})
+	
+	Inventory.AddItem("Pie", 0)
+	Inventory.AddItem("I. Noodles", 1)
+	
 	Inventory.SetInventory({"Pie", "I. Noodles"})
 	
     --Include the animation Lua file. It's important you do this in EncounterStarting, because you can't create sprites before the game's done loading.

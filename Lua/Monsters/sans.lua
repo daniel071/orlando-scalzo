@@ -36,8 +36,10 @@ function HandleCustomCommand(command)
     end
 	
 	if currentdialogue == {"Selected\nAct 1."} or currentdialogue == {"Selected\nAct 3."} then
+		DEBUG("Good Boi")
 		SetRealGlobal("scalzo-impressions", (GetRealGlobal("scalzo-impressions") + 1))
 	elseif currentdialogue == {"Selected\nAct 2."} then
+		DEBUG("Bad Boi")
 		SetRealGlobal("scalzo-impressions", (GetRealGlobal("scalzo-impressions") - 1))
 	end
 	
