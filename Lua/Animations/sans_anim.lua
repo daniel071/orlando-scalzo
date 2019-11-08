@@ -27,7 +27,7 @@ sanslegs.SetPivot(0.5, 0)
 
 --Finally, we do some frame-by-frame animation just to show off the feature. You put in a list of sprites,
 --and the time you want a sprite change to take. In this case, it's 1/2 of a second.
-sanshead.SetAnimation({"sans/sanshead1", "sans/sanshead2", "sans/sanshead3"}, 1/2)
+
 
 function AnimateSans()
     sanslegs.Scale(1, 1+0.1*math.sin(Time.time*2))
