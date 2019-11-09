@@ -7,6 +7,8 @@ The project *Orlando Scalzo* is a Undertale fight created using Create Your Fris
 ### How to install:
 If you haven't already got Create Your Frisk (required), you can download it from here:
 
+https://github.com/RhenaudTheLukark/CreateYourFrisk/releases
+
 1. Go to releases and download the latest version of Orlando Scalzo
 
    Found here: https://github.com/daniel071/orlando-scalzo/releases
