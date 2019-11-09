@@ -63,8 +63,10 @@ end
 function OnHit(bullet)
 	local color = bullet.GetVar("color")
 	if color == "regular" then
+		DEBUG("Hurt")
 		Player.Hurt(1, 0.025)
 	elseif color == "green" then
+		DEBUG("Heal")
 		Player.Heal(math.random(1, 2))
         bullet.Remove()
 	end

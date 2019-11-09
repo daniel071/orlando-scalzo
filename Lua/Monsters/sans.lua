@@ -19,6 +19,8 @@ gold = 40000
 function HandleAttack(attackstatus)
     if attackstatus == -1 then
         -- player pressed fight but didn't press Z afterwards
+		SetRealGlobal("scalzo-impressions", (GetRealGlobal("scalzo-impressions") + 1))
+		DEBUG("Good Boi")
     else
         -- player did actually attack
     end
