@@ -14,7 +14,7 @@ https://github.com/RhenaudTheLukark/CreateYourFrisk/releases
    Found here: https://github.com/daniel071/orlando-scalzo/releases
 2. Extract the zipped folder and place it in /<Your CYF Directory>/Mods
   
-3. Open up the EXE file for CYF and find an ecounter named "*orlando-scalzo*". Press Enter to play it
+3. Open up the executable file for CYF and find an ecounter named "*orlando-scalzo*". Press Enter to play it
 
 
 ### Credits:
